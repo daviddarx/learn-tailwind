@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/daviddarx/learn-tailwind#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
     "autoprefixer": "^10.4.2",
     "parcel": "^2.2.1",
     "postcss": "^8.4.6",

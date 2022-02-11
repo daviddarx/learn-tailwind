@@ -11,8 +11,17 @@
   @apply font-bold mt-12 pb-2 border-b border-gray-300;
 }
 
-.button {
-  @apply bg-secondary-100 text-secondary-200 px-5 py-3 rounded-md;
+.btn {
+  @apply p-[20px] pt-[14px] pb-[12px] rounded-full cursor-pointer;
+  @apply font-bold uppercase text-sm tracking-wider;
+}
+
+.btn--primary {
+  @apply bg-secondary-100 text-secondary-200;
+}
+
+.btn--secondary {
+  @apply text-primary shadow-border shadow-primary;
 }
 
 .card {

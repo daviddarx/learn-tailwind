@@ -14,6 +14,9 @@ module.exports = {
       },
       fontSize: {
         "10xl": ["10rem", { lineHeight: "1" }]
+      },
+      boxShadow: {
+        border: "inset 0 0 0 2px black"
       }
     }
   },

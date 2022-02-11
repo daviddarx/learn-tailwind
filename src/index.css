@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+html {
+  @apply h-full selection:bg-primary selection:text-white;
+}
+
 .recipes__group {
   @apply grid lg:grid-cols-3 gap-6 mt-8;
 }
@@ -11,9 +16,25 @@
   @apply font-bold mt-12 pb-2 border-b border-gray-300;
 }
 
+.navigation-link {
+  @apply flex font-bold py-1;
+  @apply hover:text-black;
+  @apply transition-all duration-300;
+}
+
+.navigation-link--active {
+  @apply text-gray-900;
+}
+
+.navigation-link__text {
+  @apply px-2;
+}
+
 .btn {
   @apply p-[20px] pt-[14px] pb-[12px] rounded-full cursor-pointer;
   @apply font-bold uppercase text-sm tracking-wider;
+  @apply hover:bg-primary hover:text-white;
+  @apply transition-all duration-300;
 }
 
 .btn--primary {
@@ -26,6 +47,8 @@
 
 .card {
   @apply relative bg-white rounded-md overflow-hidden shadow-md;
+  @apply hover:shadow-xl;
+  @apply transition-shadow duration-300;
 }
 
 .card__image {
@@ -45,7 +68,11 @@
 }
 
 .badge {
-  @apply absolute top-4 left-4;
-  @apply bg-secondary-100 rounded-full px-3 py-1;
-  @apply text-secondary-200 text-sm uppercase font-bold;
+  @apply absolute top-4 left-4 flex items-center;
+  @apply bg-secondary-100 rounded-full p-1;
+  @apply text-secondary-200 text-sm uppercase font-bold leading-none;
+}
+
+.badge__text {
+  @apply px-2;
 }

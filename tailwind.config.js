@@ -17,6 +17,9 @@ module.exports = {
       },
       boxShadow: {
         border: "inset 0 0 0 2px black"
+      },
+      transitionProperty: {
+        bg: "background-color"
       }
     }
   },

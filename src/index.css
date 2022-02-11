@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .recipes__group {
-  @apply mt-8;
+  @apply grid lg:grid-cols-3 gap-6 mt-8;
 }
 
 .category-title {

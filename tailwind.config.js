@@ -9,6 +9,9 @@ module.exports = {
                     200: "#888883"
                 }
             },
+            fontFamily: {
+                main: ["Nunito"]
+            },
             fontSize: {
                 "10xl": ["10rem", { lineHeight: "1" }]
             }

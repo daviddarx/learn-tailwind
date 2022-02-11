@@ -2,3 +2,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.recipes__group {
+  @apply mt-8;
+}
+
+.category-title {
+  @apply font-bold mt-12 pb-2 border-b border-gray-300;
+}
+
+.button {
+  @apply bg-secondary-100 text-secondary-200 px-5 py-3 rounded-md;
+}
+
+.card {
+  @apply relative bg-white rounded-md overflow-hidden shadow-md;
+}
+
+.card__image {
+  @apply w-full;
+}
+
+.card__text {
+  @apply px-4 py-3;
+}
+
+.card__title {
+  @apply font-bold text-lg;
+}
+
+.card__author {
+  @apply block text-gray-400;
+}
+
+.badge {
+  @apply absolute top-4 left-4;
+  @apply bg-secondary-100 rounded-full px-3 py-1;
+  @apply text-secondary-200 text-sm uppercase font-bold;
+}

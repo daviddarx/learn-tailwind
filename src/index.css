@@ -87,3 +87,15 @@ html {
 .badge__text {
   @apply px-2;
 }
+
+.recipes__scroll-group {
+  @apply flex overflow-x-scroll snap-x p-6 -m-6 mt-4;
+}
+
+.recipes__scroll-group .card {
+  @apply w-80 flex-shrink-0 snap-start scroll-ml-6 mr-6;
+}
+
+.recipes__scroll-group .card:last-child {
+  @apply mr-0;
+}
